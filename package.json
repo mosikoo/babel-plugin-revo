@@ -1,0 +1,19 @@
+{
+  "name": "babel-plugin-revo",
+  "version": "1.0.0",
+  "description": "babel-plugin-revo",
+  "main": "lib/index.js",
+  "scripts": {
+    "test-demo": "babel demo/index.js -o demo/result.js",
+    "build": "babel src/index.js -o lib/index.js  ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chenqiu",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-helper-plugin-test-runner": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0"
+  },
+  "dependencies": {}
+}
