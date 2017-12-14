@@ -1,6 +1,4 @@
 export default function ({ types: t }) {
-  var a = () => {};
-  var a = (b) => b;
   const arr = [];
   return {
     visitor: {
