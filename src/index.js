@@ -1,16 +1,13 @@
 export default function ({ types: t }) {
-  const arr = [];
   return {
     visitor: {
       Identifier(path, state) {
-        const arr = [];
-        let replacePath;      
+        const arr = [];    
         function recursion(path2) {
           const parentPath = path2.parentPath;
           if (parentPath && parentPath.isMemberExpression()) {
             const prop = parentPath.node.property.name;
             arr.push(prop);
-            replacePath = parentPath;          
             recursion(parentPath);
             return;
           }
